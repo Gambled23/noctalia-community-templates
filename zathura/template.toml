@@ -1,0 +1,8 @@
+[catalog.zathura]
+name = "Zathura"
+category = "misc"
+
+[templates.zathura]
+input_path = "zathurarc"
+output_path = "~/.config/zathura/noctaliarc"
+post_hook = "bash '{{ config_dir }}/apply.sh'"

@@ -1,0 +1,83 @@
+[catalog.discord]
+name = "Discord"
+category = "misc"
+
+[templates.discord_midnight_vesktop]
+input_path = "discord-midnight.css"
+output_path = "~/.config/vesktop/themes/noctalia.theme.css"
+
+[templates.discord_material_vesktop]
+input_path = "discord-material.css"
+output_path = "~/.config/vesktop/themes/noctalia-material.theme.css"
+
+[templates.discord_midnight_webcord]
+input_path = "discord-midnight.css"
+output_path = "~/.config/webcord/themes/noctalia.theme.css"
+
+[templates.discord_material_webcord]
+input_path = "discord-material.css"
+output_path = "~/.config/webcord/themes/noctalia-material.theme.css"
+
+[templates.discord_midnight_armcord]
+input_path = "discord-midnight.css"
+output_path = "~/.config/armcord/themes/noctalia.theme.css"
+
+[templates.discord_material_armcord]
+input_path = "discord-material.css"
+output_path = "~/.config/armcord/themes/noctalia-material.theme.css"
+
+[templates.discord_midnight_equibop]
+input_path = "discord-midnight.css"
+output_path = "~/.config/equibop/themes/noctalia.theme.css"
+
+[templates.discord_material_equibop]
+input_path = "discord-material.css"
+output_path = "~/.config/equibop/themes/noctalia-material.theme.css"
+
+[templates.discord_midnight_equicord]
+input_path = "discord-midnight.css"
+output_path = "~/.config/Equicord/themes/noctalia.theme.css"
+
+[templates.discord_material_equicord]
+input_path = "discord-material.css"
+output_path = "~/.config/Equicord/themes/noctalia-material.theme.css"
+
+[templates.discord_midnight_lightcord]
+input_path = "discord-midnight.css"
+output_path = "~/.config/lightcord/themes/noctalia.theme.css"
+
+[templates.discord_material_lightcord]
+input_path = "discord-material.css"
+output_path = "~/.config/lightcord/themes/noctalia-material.theme.css"
+
+[templates.discord_midnight_dorion]
+input_path = "discord-midnight.css"
+output_path = "~/.config/dorion/themes/noctalia.theme.css"
+
+[templates.discord_material_dorion]
+input_path = "discord-material.css"
+output_path = "~/.config/dorion/themes/noctalia-material.theme.css"
+
+[templates.discord_midnight_vencord]
+input_path = "discord-midnight.css"
+output_path = "~/.config/Vencord/themes/noctalia.theme.css"
+
+[templates.discord_material_vencord]
+input_path = "discord-material.css"
+output_path = "~/.config/Vencord/themes/noctalia-material.theme.css"
+
+[templates.discord_midnight_vencord_flatpak]
+input_path = "discord-midnight.css"
+output_path = "~/.var/app/com.discordapp.Discord/config/Vencord/themes/noctalia.theme.css"
+
+[templates.discord_material_vencord_flatpak]
+input_path = "discord-material.css"
+output_path = "~/.var/app/com.discordapp.Discord/config/Vencord/themes/noctalia-material.theme.css"
+
+[templates.discord_midnight_betterdiscord]
+input_path = "discord-midnight.css"
+output_path = "~/.config/BetterDiscord/themes/noctalia.theme.css"
+
+[templates.discord_material_betterdiscord]
+input_path = "discord-material.css"
+output_path = "~/.config/BetterDiscord/themes/noctalia-material.theme.css"

@@ -1,0 +1,7 @@
+[catalog.zed]
+name = "Zed"
+category = "editor"
+
+[templates.zed]
+input_path = "zed.json"
+output_path = "~/.config/zed/themes/noctalia.json"
