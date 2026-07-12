@@ -2,13 +2,12 @@
 
 A Noctalia v5 color template for the [Colorful](https://github.com/sanoojes/spicetify-colorful) Spicetify theme.
 
-Generates Colorful's `color.ini` from your active Noctalia palette and reapplies
-Spicetify automatically whenever your theme changes.
+Generates Colorful's `color.ini` from your active Noctalia palette and reapplies Spicetify automatically whenever your theme changes.
 
 ## Requirements
 
 - [Spicetify](https://spicetify.app/docs/getting-started) installed and working
-- The **[Colorful](https://github.com/sanoojes/spicetify-colorful)** Spicetify theme installed at `~/.config/spicetify/Themes/Colorful`
+- The **[Colorful](https://github.com/sanoojes/spicetify-colorful)** Spicetify theme **MANUALLY** installed at `~/.config/spicetify/Themes/Colorful`
 
 ## What it does
 
@@ -34,8 +33,8 @@ Spicetify automatically whenever your theme changes.
 To apply the theme run the commands below:
 
 ```sh
-spicetify config current_theme Colorful
-spicetify config color_scheme noctalia
+spicetify config current_theme Colorful color_scheme noctalia
+spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
 spicetify apply
 ```
 
