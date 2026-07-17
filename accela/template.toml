@@ -1,0 +1,8 @@
+[catalog.accela]
+name = "Accela"
+category = "misc"
+
+[templates.accela]
+input_path = "accela.conf"
+output_path = "$XDG_CONFIG_HOME/Tachibana Labs/theme.conf"
+post_hook = "bash '{{ config_dir }}/apply.sh'"
