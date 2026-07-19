@@ -1,8 +1,8 @@
-[catalog.pywallfox-beta4]
+[catalog.pywalfox-beta4]
 name = "Pywalfox (beta4)"
 category = "browser"
 
-[templates.pywallfox-beta4]
-input_path = "pywallfox.json"
+[templates.pywalfox-beta4]
+input_path = "pywalfox.json"
 output_path = "$XDG_CACHE_HOME/wal/colors.json"
 post_action = "firefox-theme"
