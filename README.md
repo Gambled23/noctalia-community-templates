@@ -54,6 +54,7 @@ Beyond the basics:
 | `input_path_modes` | `{ dark = "...", light = "..." }` when dark and light need different source files. |
 | `input_path_dynamic` | A command whose stdout is the input path. |
 | `pre_hook` / `post_hook` | Shell run before or after the write. |
+| `post_action` | Named noctalia built-in after the write (not shell). Currently: `firefox-theme`. |
 | `requires_path` | Skip the entry unless this path exists, so one template can ship entries for apps a user may not have. |
 
 Output paths expand a leading `$XDG_CONFIG_HOME`, `$XDG_DATA_HOME`, `$XDG_STATE_HOME`, `$XDG_CACHE_HOME`, or `~`.

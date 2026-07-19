@@ -34,11 +34,18 @@ ENTRY_FIELDS = {
     "output_path_dynamic",
     "pre_hook",
     "post_hook",
+    "post_action",
     "requires_path",
     "compare_to",
     "colors_to_compare",
     "index",
     "enabled",
+}
+
+# Named built-ins run inside noctalia after the template write (not shell).
+# Keep in sync with noctalia's template_engine post_action handlers.
+POST_ACTIONS = {
+    "firefox-theme",
 }
 
 # `{{ config_dir }}` in a hook or a dynamic command resolves to the template's own
@@ -189,6 +196,23 @@ class Validator:
 
         if "enabled" in entry and not isinstance(entry["enabled"], bool):
             self.add_error(manifest_path, f"{context}: enabled must be a bool")
+
+        post_action = entry.get("post_action")
+        if post_action is not None:
+            if not is_non_empty_string(post_action):
+                self.add_error(manifest_path, f"{context}: post_action must be a non-empty string")
+            elif post_action not in POST_ACTIONS:
+                valid = ", ".join(sorted(POST_ACTIONS))
+                self.add_error(manifest_path, f"{context}: post_action '{post_action}' is not one of: {valid}")
+            else:
+                # noctalia post_actions require exactly one concrete output path.
+                outputs = entry.get("output_path")
+                if outputs is None:
+                    self.add_error(manifest_path, f"{context}: post_action requires output_path (not output_path_dynamic)")
+                else:
+                    values = outputs if isinstance(outputs, list) else [outputs]
+                    if len(values) != 1:
+                        self.add_error(manifest_path, f"{context}: post_action requires exactly one output_path")
 
         for field in ("pre_hook", "post_hook", "input_path_dynamic", "output_path_dynamic"):
             command = entry.get(field)
